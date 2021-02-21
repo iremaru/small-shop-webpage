@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NombreComercio</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+</head>
+<body>
+    <header>
+        <img src="*" alt="Logo">
+    </header>
+
+    <nav>
+        <ul class="menuLinks">
+            <li> <a href="#theBussiness" onclick="showSection('theBussiness')">Shop name</a></li>
+            <li><a href="#theNews" onclick="showSection('theNews')"">News</a></li>
+            <li><a href="#theContact" onclick="showSection('theContact')"">Contact us</a></li>
+            <li><a href="#theIdentity" onclick="showSection('theIdentity')"">About</a></li>
+        </ul>
+        <ul class="socialIcons">
+            <li class="social_fb">
+                <a href="#">
+                    <i class="bi bi-facebook"></i>
+                </a>
+            </li>
+            <li class="social_ig">
+                <a href="#">
+                    <i class="bi bi-instagram"></i>
+                </a>
+            </li>
+            <li class="social_tw">
+                <a href="#">
+                    <i class="bi bi-twitter"></i>
+                </a>
+            </li>
+            <li class="social_mail">
+                <a href="#">
+                    <i class="bi bi-envelope-fill"></i>
+                </a>
+            </li>
+        </ul>
+        <ul>
+
+        </ul>
+    </nav>
+    
+    <main>
+        <section id="theBussiness">
+            <div> <!--Bussiness Info-->
+                <div>
+                    <h1 class="text_BussinessName">Shop name</h1>
+                    <p class="text_BussinessType">Shop type</p>
+                    <p class="text_slogan">Slogan slogan sloslogan slogan</p>
+                </div>
+                <p class="text_explanation">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad quidem quibusdam nisi odit repellat consequatur blanditiis, cum atque dignissimos nemo corporis, molestiae dolor, sunt deserunt praesentium alias hic soluta voluptatibus.</p>
+                <button class="btn btn-outline-primary">Click!</button>
+            </div>
+
+            <div> <!--Bussiness Images-->
+                <img src="*" alt="The Bussiness">
+            </div>
+
+            <div id="featuredProducts"> <!--Products presentation-->
+                <div class="card" style="width: 18rem;"> <!--Item example-->
+                    <img src="https://via.placeholder.com/150" alt="productName">
+                    <div class="card-body" id="ref">
+                        <p class="card-title">Product Name</p>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum culpa molestias, mollitia modi atque, doloremque eius est fuga voluptatem in voluptatum assumenda rerum distinctio corrupti nihil eum at aliquam esse.</p>
+                        <a href="#" class="btn btn-primary" onclick="showInfoItem('ref')">Info</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="theNews">
+            <h2>News</h2>
+            <div class="postContainer">
+                <article class="blog_post" id="postID">
+                    <img src="#" alt="cover" class="blog_post_cover">
+                    <h3 class="text-post_title">News title</h3>
+                    <p class="text-post_info"><span class="text-post_date">10/05/1977</span> <span class="text-post_otherInfo">Somewhere in the world</span></p>
+                    <div class="blog_post_body">
+                        <p class="text-post_body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad quidem quibusdam nisi odit repellat consequatur blanditiis, cum atque dignissimos nemo corporis, molestiae dolor, sunt deserunt praesentium alias hic soluta voluptatibus.</p>
+                    </div>
+                    
+                </article>
+            </div>
+            
+        </section>
+
+        <section id="theContact">
+            <h2>Contact</h2>
+            <div> <!--Instructions-->
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad quidem quibusdam nisi odit repellat consequatur blanditiis, cum atque dignissimos nemo corporis, molestiae dolor, sunt deserunt praesentium alias hic soluta voluptatibus.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad quidem quibusdam nisi odit repellat consequatur blanditiis, cum atque dignissimos nemo corporis, molestiae dolor, sunt deserunt praesentium alias hic soluta voluptatibus.</p>
+            </div>
+            <div>
+                <form action="form.php">
+                    <label for="userName">Name</label> <i class="bi-person-fill"></i>
+                    <input type="text" name="userName" id="userName" required>
+                    <label for="userMail">Mail address</label> <i class="bi-envelope-fill"></i>
+                    <input type="email" name="userMail" id="userMail">
+                    <label for="userPhone">Phone number</label> <i class="bi-telephone-fill"></i>
+                    <input type="tel" name="userPhone" id="userPhone" maxlength="9" pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{2}" placeholder="123-11-22-33">
+                    <label for="userText">Message</label> <i class="bi-chat-right-fill"></i>
+                    <textarea name="userText" id="userText" cols="30" rows="10"></textarea>
+                </form>
+            </div>
+            <div class="location">
+                <div class="locationMap" id="location-Shop1"></div>
+                <div class="addressContainer">
+                    <ul>
+                        <li>Address</li>
+                        <li>Phone</li>
+                        <li>Mail</li>
+                    </ul>
+                </div>
+            </div>
+            
+        </section>
+
+        <section id="theIdentity">
+            <h2>About</h2>
+            <h3 d="theIdentity_name" class="text_BussinessName">Bussiness Name</h3>
+            <img src="*" alt="imgBsns">
+            <div id="theIdentity_motto" class="text_slogan">
+                <p>Lorem ipsum dolor sit</p>
+            </div>
+            <div id="theIdentity_text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quibusdam, fugiat dignissimos veritatis nesciunt quisquam eum tenetur aliquam aut eligendi quas dicta tempora natus obcaecati harum? Nobis eveniet laudantium dignissimos.</p>
+            </div>
+            
+        </section>
+    </main>
+    
+    <footer>
+        <div> <!--Social Icons container-->    
+            <ul class="socialIcons">
+                <li class="social_fb">
+                    <a href="#">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                </li>
+                <li class="social_ig">
+                    <a href="#">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                </li>
+                <li class="social_tw">
+                    <a href="#">
+                        <i class="bi bi-twitter"></i>
+                    </a>
+                </li>
+                <li class="social_mail">
+                    <a href="#">
+                        <i class="bi bi-envelope-fill"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <address>
+            <div class="map map-sm">
+                <!--TODO: GoogleMap via js-->
+            </div>
+            <div class="addressContainer">
+                <ul>
+                    <li>Address</li>
+                    <li>Phone</li>
+                    <li>Mail</li>
+                </ul>
+            </div>
+        </address>
+        <div>
+            <p>CopyRight</p>
+        </div>
+    </footer>
+</body>
+</html>
